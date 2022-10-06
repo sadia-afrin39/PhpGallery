@@ -1,0 +1,135 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+body{
+    font-size: 10px;
+    margin: 2rem;
+}
+
+.header-brand{
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+    color: #000;
+}
+
+.header-brand::after{
+    content: '';
+    position: absolute;
+    right: -1rem;
+    top:-0.2rem;
+    width: 0.2rem;
+    height: 2rem;
+    background-color: #000;
+}
+
+nav{
+    float:right;
+    font-size: 1rem;
+}
+
+nav ul{
+    display: flex;
+    width: 100%;;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li+li{
+    margin-left: 1rem;
+}
+nav ul li a{
+    color: #000;
+    text-transform: uppercase;
+}
+
+.gallery-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-container a{
+    width:230px;
+    margin: 20px 10px 0;
+}
+
+.gallery-container a:hover{
+    opacity: 0.8;
+}
+
+.gallery-container a div{
+    width: 100%;
+    height: 235px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery-upload{
+   background-color: beige; 
+}
+
+.gallery-upload form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 1.5rem;
+}
+
+input[type='text'],
+input[type='file']{
+    width: 70%;
+    margin: 0.5rem auto;
+    border: 0.2px solid #fff;;
+    border-radius: 1rem;
+    padding: 0.2rem 0.5rem;
+}
+
+button{
+    background-color: blue;
+    color: #fff;
+    width: 30%;
+    margin: 0.2rem auto 0;
+    padding: 0.2rem 0;
+    outline: 0;
+    border: 0;
+    border-radius: 1rem;
+}
+
+.wrapper{
+    width: 80%;
+    margin: 1.5rem 10%; 
+}
+
+footer{
+    background-color: #000;
+    display: flex;
+    padding: 2rem;
+    color: #fff;
+}
+
+.footer-links-main li+li,
+.footer-links-cases li+li{
+    margin-top: 0.5rem;
+}
+
+.footer-links-main li a,
+.footer-links-cases li a{
+   color:#fff;
+}
+
+.footer-links-cases{
+    margin-left: 3rem;
+}
